@@ -1,2 +1,2 @@
 # strona_internetowa
-Do pracy nad stroną internetową i materiałami, które się tam znajdą
+Repozytorium utworzone do pracy nad stroną internetową Decybelomierz i materiałami, które się tam znajdą
