@@ -1,0 +1,155 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Automatyczna wysokość, aby dostosować do obrazka */
+}
+
+.image-container img {
+    width: 100%;
+    height: 40%;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%; /* Dostosuj według potrzeb */
+    left: 30%;
+    transform: translateX(-50%);
+    /*text-align: center; */
+    color: white;
+    font-family: "Cambria";
+    font-size: 40px;
+}
+
+.button-overlay {
+    position: absolute;
+    top: 40%; /* Dostosuj według potrzeb */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff1c1c; /* Kolor przycisku */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Cień dla przycisku */
+    transition: background-color 0.3s;
+}
+
+.button-overlay:hover {
+    background-color: #e64a19; /* Kolor przycisku po najechaniu */
+}
+
+.full-width {
+    width: 98vw;
+    height: 65vh;
+    object-fit: cover;
+}
+
+#footer {
+	text-align: center;
+}
+
+#background-video {
+    min-width: 99%; /* Minimalna szerokość równa szerokości okna */
+    min-height: 50%; /* Minimalna wysokość równa wysokości okna */
+    width: auto;
+    height: auto;
+    z-index: -1; /* Umieść wideo za treścią */
+}
+
+body {
+	background-color: #e8e6e6;
+}
+
+h1 {
+	margin-left: 50px;
+    	font-size: 30px;
+	font-weight: 100;
+    	color: #ab2020;		
+}
+
+h2 {
+	margin-left: 50px;
+    	font-size: 20px;
+	font-weight: 100;
+  	width: 35%;
+	line-height: 1.5;		
+}
+
+header {
+	background-color: white;
+	display: flex;
+	margin-top:15px;
+	align-items: center; /* Wyrównanie elementów w pionie */
+    	justify-content: space-between; /* Rozłożenie elementów na całą szerokość */
+	padding: 15px 15px;
+}
+
+/* Nieodwiedzony link + odwiedzony */
+a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+/*Najechany kursorem */
+a:hover {
+	color: #ff1c1c;
+	text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    align-items: center; /* Wyrównanie wewnętrznych elementów logo w pionie */
+    font-family: "Cambria";
+    font-size: 40px;
+    font-weight: 600;
+    color: #ff1c1c;
+    margin-left: 30px;
+}
+
+#logo a {
+    color: #ff1c1c;
+}
+
+
+#logo img {
+    margin-right: 15px; /* Odstęp między obrazkiem a tekstem logo */
+}
+
+#container {
+  display: flex;  
+  flex-wrap: wrap;
+  gap: 20px;        
+}
+
+.but {
+  background-color: #ff1c1c;
+  border: none;
+  color: white;
+  width: 240px; /* Stała szerokość przycisku */
+  height: 240px; /* Stała wysokość przycisku */
+  padding: 0; /* Usuń dodatkowe wypełnienie */
+  text-align: center;
+  font-family: "Cambria";
+  font-size: 26px;
+  margin: 10px 10px;
+  margin-left: 30px;
+  opacity: 0.5;
+  transition: 0.5s;
+  word-wrap: break-word;
+}
+
+.margin_partnerzy {
+    margin-left: 35px;
+}
+
+.but:hover {opacity:0.8; cursor: pointer;}
+
+#menu {
+    display: flex;
+    gap: 40px; /* Odstępy między linkami w menu */
+    margin-right:40px;
+    font-family: "Cambria";
+	font-size: 20px;
