@@ -76,7 +76,7 @@ header {
 
 /* Language Switch */
 .language-switch a img {
-	width: 24px;
+	width: 35px;
 	height: 24px;
 	margin-left: 5px;
 }
@@ -120,7 +120,7 @@ header {
 .text-overlay {
 	position: absolute;
 	top: 15%; /* Adjust position for better alignment */
-	left: 50%;
+	left: 33%;
 	transform: translateX(-50%);
 	color: white;
 	font-family: "Cambria";
@@ -133,8 +133,8 @@ header {
 /* Button Styling */
 .button-overlay {
 	position: absolute;
-	top: 35%; /* Increase vertical distance from text */
-	left: 50%;
+	top: 50%; /* Increase vertical distance from text */
+	left: 33%;
 	transform: translateX(-50%);
 	background-color: #ff1c1c;
 	color: white;
@@ -225,8 +225,8 @@ h2 {
 	}
 
 	.button-overlay {
-		top: 45%; /* Increase distance between button and text */
-		width: 80%; /* Adjust button width for mobile */
+		top: 55%; /* Increase distance between button and text */
+		width: 40%; /* Adjust button width for mobile */
 		padding: 10px; /* Reduce padding for better fit */
 		font-size: 14px; /* Reduce font size */
 	}
