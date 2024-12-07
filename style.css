@@ -130,28 +130,6 @@ header {
 	z-index: 1; /* Ensure text stays on top */
 }
 
-/* Button Styling */
-.button-overlay {
-	position: absolute;
-	top: 50%; /* Increase vertical distance from text */
-	left: 33%;
-	transform: translateX(-50%);
-	background-color: #ff1c1c;
-	color: white;
-	border: none;
-	padding: 15px 40px;
-	font-size: 18px;
-	cursor: pointer;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-	transition: background-color 0.3s;
-	z-index: 1; /* Ensure button stays on top */
-}
-
-.button-overlay:hover {
-	background-color: #e64a19;
-}
-
 /* Partner Section */
 .margin_partnerzy {
 	margin-left: 35px;
