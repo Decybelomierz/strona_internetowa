@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-	<meta charset="utf-8"/>
-	<title>Decybelomierz</title>
-	<link rel="icon" href="images/logo_beznapisu.png" type="image/png"/>
-	<link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-	<header>
-		<div id="logo">
-			<a href="strona_główna.html"><img src="images/logo4.png" alt="LOGO"></a>
-		</div>
-		<nav id="menu" class="menu">
-			<a href="strona_główna.html">Strona główna</a>
-			<a href="o_nas.html">O projekcie</a>
-			<a href="materiały.html">Materiały</a>
-			<a href="kontakt.html">Kontakt</a>
-			<div class="language-switch">
-				<a href="strona_główna.html"><img src="images/polski.png" alt="PL"></a>
-				<a href="homepage.html"><img src="images/angielski.png" alt="EN"></a>
-			</div>
-		</nav>
 
-	</header>
+<head>
+	<meta charset="utf-8" />
+	<title>Decybelomierz</title>
+	<link rel="icon" href="images/logo_beznapisu.png" type="image/png" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="navbar__container">
+			<a href="strona_główna.html" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
+			<div class="navbar__toogle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="navbar__menu">
+				<li class="navbar__item">
+					<a href="strona_główna.html" class="navbar__links">Strona główna</a>
+				</li>
+				<li class="navbar__item">
+					<a href="o_nas.html" class="navbar__links">O projekcie</a>
+				</li>
+				<li class="navbar__item">
+					<a href="materiały.html" class="navbar__links">Materiały</a>
+				</li>
+				<li class="navbar__item">
+					<a href="kontakt.html" class="navbar__links">Kontakt</a>
+				</li>
+				<div class="navbar__language-switch">
+					<a href="strona_główna.html"><img src="images/polski.png" alt="PL"></a>
+					<a href="homepage.html"><img src="images/angielski.png" alt="EN"></a>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
 	<main>
 		<br>
 		<h1>Materiały</h1>
@@ -31,17 +46,18 @@
 			<button class="but">DECYBELOGAME</button>
 			<a href="kalkulator.html"><button class="but">KALKULATOR GŁOŚNOŚCI</button></a>
 			<button class="but">SPRAWDŹ SWÓJ SŁUCH!</button>
-        	<button class="but">PORÓWNANIE GŁOŚNOŚCI</button>
-        	<button class="but">SYMULACJA USZKODZENIA SŁUCHU</button>
+			<button class="but">PORÓWNANIE GŁOŚNOŚCI</button>
+			<button class="but">SYMULACJA USZKODZENIA SŁUCHU</button>
 			<button class="but">DECYBELOMIERZ TUTORIAL</button>
 			<button class="but">QUIZY</button>
 			<button class="but">FILMY</button>
-        	<button class="but"></button>
-        	<button class="but"></button>
-    	</div>
+			<button class="but"></button>
+			<button class="but"></button>
+		</div>
 	</main>
 	<div id="footer">
-        	<p>&copy; Decybelomierz. Wszelkie prawa zastrzeżone.</p>
-    	</div>
+		<p>&copy; Decybelomierz. Wszelkie prawa zastrzeżone.</p>
+	</div>
 </body>
+
 </html>

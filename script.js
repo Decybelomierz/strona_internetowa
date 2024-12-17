@@ -1,7 +1,7 @@
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
 
-// Toggle the menu on hamburger click
-hamburger.addEventListener('click', () => {
-    menu.classList.toggle('active');
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
 });

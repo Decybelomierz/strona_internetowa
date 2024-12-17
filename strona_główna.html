@@ -1,50 +1,139 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
+	<meta name="vieport" content="width=device=width,initial-scale=1.0" />
 	<title>Decybelomierz</title>
-	<link rel="icon" href="images/logo_beznapisu.png" type="image/png"/>
-	<link rel="stylesheet" href="style.css"/>
+	<link rel="icon" href="images/logo_beznapisu.png" type="image/png" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 	<header>
-		<div id="logo">
-			<a href="strona_główna.html"><img src="images/logo4.png" alt="LOGO"></a>
-		</div>
-
-		<div id="hamburger" class="hamburger">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-
-		<nav id="menu" class="menu">
-			<a href="strona_główna.html">Strona główna</a>
-			<a href="o_nas.html">O projekcie</a>
-			<a href="materiały.html">Materiały</a>
-			<a href="kontakt.html">Kontakt</a>
-			<div class="language-switch">
-				<a href="strona_główna.html"><img src="images/polski.png" alt="PL"></a>
-				<a href="homepage.html"><img src="images/angielski.png" alt="EN"></a>
+		<div class="navbar__container">
+			<a href="strona_główna.html" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
+			<div class="navbar__toogle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</div>
-		</nav>
+			<ul class="navbar__menu">
+				<li class="navbar__item">
+					<a href="strona_główna.html" class="navbar__links">Strona główna</a>
+				</li>
+				<li class="navbar__item">
+					<a href="o_nas.html" class="navbar__links">O projekcie</a>
+				</li>
+				<li class="navbar__item">
+					<a href="materiały.html" class="navbar__links">Materiały</a>
+				</li>
+				<li class="navbar__item">
+					<a href="kontakt.html" class="navbar__links">Kontakt</a>
+				</li>
+				<div class="navbar__language-switch">
+					<a href="strona_główna.html"><img src="images/polski.png" alt="PL"></a>
+					<a href="homepage.html"><img src="images/angielski.png" alt="EN"></a>
+				</div>
+			</ul>
+		</div>
 	</header>
 
 	<main>
-		<div class="image-container">
-			<img src="images/tlo.png" alt="tło">
-			<div class="text-overlay">Witaj na oficjalnej stronie projektu Decybelomierz!</div>
+		<div id="section0" class="main__image-container">
+			<img src="images/tlo.png" alt="background" id="main__img">
+			<div class="main__img-textoverlay">Witaj na oficjalnej stronie projektu <br> Decybelomierz!</div>
 		</div>
-		</br>
-		<center><h1>Witaj na oficjalnej stronie projektu Decybelomierz!</h1></center>
-		<h1>Partnerzy projektu</h1>
-		<img src="images/emitel3.png" alt="program partnerski emitel - Sąsiedzkie Innowacje" class="margin_partnerzy">
-	</main>
 
-	<div id="footer">
-		<p>&copy; Decybelomierz. Wszelkie prawa zastrzeżone.</p>
-	</div>
+
+		<div id="section1" class="article">
+			<div class="text">
+				<h1>O projekcie</h1>
+				<div class="text__container">
+					<h2>
+						Decybelomierz to projekt realizowany w roku szkolnym 2024/2025 w ramach olimpiady "Zwolnieni z Teorii". Jego
+						twórcami są uczniowie I Liceum Ogólnokształcącego im. Książąt Pomorskich w Rumi - Agata Wojciechowska, Julia
+						Kołodziejczyk, Agata Gomułka, Piotr Stęchły, Krzysztof Murawski i Jan Dorszyński.
+					</h2>
+					<h2>
+						Decybelomierz to projekt społeczny mający na celu zwiększenie świadomości społeczeństwa na temat problemu
+						otaczającego nas hałasu oraz jego wpływu na nasze zdrowie i jakość życia. Postanowiliśmy poruszyć ten temat,
+						ponieważ uważamy, że jest on często niezauważany, pomimo że według WHO jest jednym z najważniejszych
+						zagrożeń środowiskowych dla zdrowia człowieka (zaraz po zanieczyszczeniu powietrza).
+					</h2>
+					<h2>
+						Strona internetowa na której obecnie się znajdujecie, jest jednym z elementów naszego projektu. Znajdziecie
+						tu różne materiały edukacyjne — w tym m.in. dowiecie się jak zbudować swój własny decybelomierz, sprawdzicie
+						swój słuch oraz doświadczycie symulacji uszkodzenia słuchu.
+					</h2>
+					<h2>
+						Oprócz tego, całą naszą działalność na bieżąco zamieszczamy na platformach społecznościowych - linki
+						znajdziecie w zakładce "Kontakt" - zachęcamy do obserwacji, pomoże nam to w dotarciu do większej liczby osób:
+					</h2>
+					<h2>
+						Liczymy, że nasza inicjatywa przyniesie realny wpływ na występujący problem, który doprowadzi do stworzenia
+						bardziej przyjaznego i zdrowego otoczenia dla społeczności.
+					</h2>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="materials__container">
+			<div class="materials__main">
+				<h1>Materiały</h1>
+				<ul class="materials__blocks">
+					<li class="materials__button">
+						<a href="strona_główna.html"><button class="btn">M1</button></a>
+					</li>
+					<li class="materials__button">
+						<a href="strona_główna.html"><button class="btn">M2</button></a>
+					</li>
+					<li class="materials__button">
+						<a href="strona_główna.html"><button class="btn">M3</button></a>
+					</li>
+					<li class="materials__button">
+						<a href="strona_główna.html"><button class="btn">M4</button></a>
+					</li>
+					<li class="materials__button">
+						<a href="strona_główna.html"><button class="btn">M5</button></a>
+					</li>
+					<li class="materials__button">
+						<a href="strona_główna.html"><button class="btn">M6</button></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="footer__container">
+			<div class="social__media">
+				<div class="social__media-wrap">
+					<div class="footer__logo">
+						<a href="" id="footer__logo"><img src="images/logo4.png" alt="LOGO"></a>
+					</div>
+					<p class="website__rights">&copy; Decybelomierz. Wszelkie prawa zastrzeżone.</p>
+					<div class="social__icons">
+						<a href="strona_główna.html" class="social__icon-link" target="_blank">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="strona_główna.html" class="social__icon-link" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="strona_główna.html" class="social__icon-link" target="_blank">
+							<i class="fab fa-tiktok"></i>
+						</a>
+						<a href="strona_główna.html" class="social__icon-link" target="_blank">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 
 	<script src="script.js"></script>
 </body>
+
 </html>
