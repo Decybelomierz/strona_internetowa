@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<div class="navbar__container">
-			<a href="strona_główna.html" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
+			<a href="#start" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
 			<div class="navbar__toogle" id="mobile-menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -21,36 +21,35 @@
 			</div>
 			<ul class="navbar__menu">
 				<li class="navbar__item">
-					<a href="strona_główna.html" class="navbar__links">Strona główna</a>
+					<a href="#start" class="navbar__links">Strona główna</a>
 				</li>
 				<li class="navbar__item">
-					<a href="o_nas.html" class="navbar__links">O projekcie</a>
+					<a href="#o_projekcie" class="navbar__links">O projekcie</a>
 				</li>
 				<li class="navbar__item">
-					<a href="materiały.html" class="navbar__links">Materiały</a>
+					<a href="#materialy" class="navbar__links">Materiały</a>
 				</li>
 				<li class="navbar__item">
-					<a href="kontakt.html" class="navbar__links">Kontakt</a>
+					<a href="#zrzutka" class="navbar__links">Wsparcie</a>
 				</li>
-				<div class="navbar__language-switch">
-					<a href="strona_główna.html"><img src="images/polski.png" alt="PL"></a>
-					<a href="homepage.html"><img src="images/angielski.png" alt="EN"></a>
-				</div>
+				<li class="navbar__item">
+					<a href="#kontakt" class="navbar__links">Kontakt</a>
+				</li>
 			</ul>
 		</div>
 	</header>
 
 	<main>
-		<div class="main__image-container">
+		<div id="start" class="main__image-container">
 			<img src="images/tlo.png" alt="background" id="main__img">
 			<div class="main__img-textoverlay">Witaj na oficjalnej stronie projektu <br> Decybelomierz!</div>
 		</div>
 
 
-		<div class="article">
-			<div class="text">
+		<div id="o_projekcie" class="text__container">
+			<div class="text__main">
 				<h1>O projekcie</h1>
-				<div class="text__container">
+				<div class="text">
 					<h2>
 						Decybelomierz to projekt realizowany w roku szkolnym 2024/2025 w ramach olimpiady "Zwolnieni z Teorii". Jego
 						twórcami są uczniowie I Liceum Ogólnokształcącego im. Książąt Pomorskich w Rumi - Agata Wojciechowska, Julia
@@ -80,7 +79,7 @@
 		</div>
 
 
-		<div class="materials__container">
+		<div id="materialy" class="materials__container">
 			<div class="materials__main">
 				<h1>Materiały</h1>
 				<ul class="materials__blocks">
@@ -106,12 +105,30 @@
 			</div>
 		</div>
 
+		<div id="zrzutka" class="fundraising__container">
+			<div class="fundraising__main">
+				<h1>Wsparcie finansowe</h1>
+				<div class="fundraising__content">
+					<h2>
+						Dajcie kase, bo nam potrzebna, musimy oskubac frajerow i wygrac ten projekt oto pierwszy krok do objecia wladzy przez imperatora krzysztofa nad calym swiatem, wygrac ten projekt oto pierwszy krok do objecia wladzy przez imperatora krzysztofa nad calym swiatem,wygrac ten projekt oto pierwszy krok do objecia wladzy przez imperatora krzysztofa nad calym swiatem,wygrac ten projekt oto pierwszy krok do objecia wladzy przez imperatora krzysztofa nad calym swiatem,
+					</h2>
+					<iframe frameborder="0" width="430" height="500" scrolling="no" src="https://pomagam.pl/n6bmtp/widget/large"></iframe>
+				</div>
+			</div>
+		</div>
 
-		<div class="footer__container">
+		<div id="kontakt" class="footer__container">
+			<div class="contact__main">
+				<h1></h1>
+				<div class="contact__content">
+
+				</div>
+			</div>
+
 			<div class="social__media">
 				<div class="social__media-wrap">
 					<div class="footer__logo">
-						<a href="" id="footer__logo"><img src="images/logo4.png" alt="LOGO"></a>
+						<a href="#start" id="footer__logo"><img src="images/logo4.png" alt="LOGO"></a>
 					</div>
 					<p class="website__rights">&copy; Decybelomierz. Wszelkie prawa zastrzeżone.</p>
 					<div class="social__icons">
