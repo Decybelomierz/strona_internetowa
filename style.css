@@ -251,8 +251,8 @@ main {
 
 .materials__blocks {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 100px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px;
 	list-style: none;
 	text-align: center;
 }
@@ -263,9 +263,9 @@ main {
 
 .btn {
 	background-color: var(--button_lighterred);
-	color: none;
-	width: 380px;
-	height: 380px;
+	color: var(--white);
+	width: 340px;
+	height: 340px;
 	border: none;
 	cursor: pointer;
 	font-size: 24px;
@@ -458,18 +458,17 @@ main {
 
 
 /* Responsive Main Section Fix */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1180px) {
 	/* Materials Section */
 	.materials__main h1 {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: calc(1vw + 26px);
 	}
 
 	.materials__blocks {
-		grid-template-columns: repeat(1, 1fr);
-		gap: 120px;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 80px;
 	}
 
 	.materials__button {
@@ -477,8 +476,8 @@ main {
 	}
 
 	.btn {
-		width: 380px;
-		height: 400px;
+		width: 340px;
+		height: 340px;
 		border: none;
 		cursor: pointer;
 		font-size: 24px;
@@ -490,7 +489,6 @@ main {
 		box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
 		transform: scale(1.02);
 	}
-
 
 
 	/* Footer Section */
@@ -521,18 +519,56 @@ main {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+	/* Materials Section */
+	.materials__main h1 {
+		font-size: 38px;
+	}
+
+	.materials__blocks {
+		grid-template-columns: repeat(1,1fr);
+		gap: 70px;
+	}
+
+	.btn {
+		width: 300px;
+		height: 300px;
+	}
+
+
+
+	/* Article Section */
+	.text__main h1 {
+		font-size: 38px;
+	}
+
+
+
+	/* Fundrising Section */
+	.fundraising__main h1 {
+		font-size: 38px;
+	}
+
+	.fundraising__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.fundraising__content h2 {
+		width: 70%;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+
+
 	/* Footer Section */
 	.footer__link-items{
 		margin: 0px;
 		padding: 10px;
 		width: 100%;
-	}
-
-	/* Materials Section */
-	.materials__blocks {
-		grid-template-columns: repeat(1,1fr);
-		gap: 70px;
 	}
 }
 
@@ -573,7 +609,7 @@ main {
 #noise-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 #calculator-label {
