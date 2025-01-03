@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<div class="navbar__container">
-			<a href="#start" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
+			<a href="homepage.html#start" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
 			<div class="navbar__toogle" id="mobile-menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -43,10 +43,21 @@
 		<div class="calculator__container">
 			<div class="calculator__main">
 				<h1>Kalkulator Narażenia na Hałas</h1>
-				<p>Wprowadź poziom hałasu w decybelach (dB), aby obliczyć maksymalny bezpieczny czas ekspozycji.</p>
+				<p>Wprowadź poziom hałasu w decybelach (dB) lub wybierz z listy propozycji, aby obliczyć maksymalny bezpieczny czas ekspozycji.</p>
 				<form id="noise-form">
 					<label for="noise-level" id="calculator-label">Poziom hałasu (dB):</label>
-					<input type="number" id="noise-level" placeholder="Wprowadź wartość decybeli, np.(85)"  min="30" max="150" required>
+					<div class="input__container">
+						<input type="number" id="noise-level" list="noise-suggestions" placeholder="Wprowadź wartość decybeli, np.(85)"  min="30" max="150" required>
+						<div class="custom__dropdown">
+							<ul class="hidden__dropdown" id="noise-options">
+								<li class="hd__items" data-value="60">Normalna rozmowa (60dB)</li>
+								<li class="hd__items" data-value="85">Próg bezpieczeństwa (85dB)</li>
+								<li class="hd__items" data-value="100">Ruch uliczny (100dB)</li>
+								<li class="hd__items" data-value="110">Koncert rockowy (110dB)</li>
+								<li class="hd__items" data-value="120">Wiertarka (120dB)</li>
+							</ul>
+						</div>
+					</div>
 					<button type="submit" id="btn-calc">Oblicz</button>
 				</form>
 				<div id="result"></div>

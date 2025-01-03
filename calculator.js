@@ -1,3 +1,4 @@
+// Główna część kalkulatora
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("noise-form");
     const resultDiv = document.getElementById("result");
@@ -31,6 +32,34 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             resultDiv.textContent = `Maksymalny czas ekspozycji: ${hours} godzin i ${minutes} minut.`
             resultDiv.style.color = "green";
+        }
+    });
+});
+
+
+// Pole wyboru na inpucie
+document.addEventListener("DOMContentLoaded", function() {
+    const noiseInput = document.getElementById("noise-level");
+    const dropdown = document.getElementById("noise-options");
+
+    // Pokazuje lub ukrywa listę przy kliknięciu w pole wejściowe
+    noiseInput.addEventListener("focus", function() {
+        dropdown.classList.remove("hidden__dropdown");
+    });
+
+    // Ukrywa listę przy kliknięciu poza nią
+    document.addEventListener("click", function(e) {
+        if (!e.target.closest(".input__container")) {
+            dropdown.classList.add("hidden__dropdown");
+        }
+    });
+
+    // Obsługa wyboru elementu z listy
+    document.addEventListener("click", function(e) {
+        if (e.target.tagName === "LI") {
+            const value = e.target.getAttribute("data-value");
+            noiseInput.value = value;
+            dropdown.classList.add("hidden__dropdown");
         }
     });
 });

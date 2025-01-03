@@ -186,6 +186,10 @@ header {
 
 
 
+
+
+
+
 /* Main Styling */
 main {
 	z-index: 99;
@@ -614,6 +618,12 @@ main {
 
 #calculator-label {
     font-size: 20px;
+	display: block;
+}
+
+.input__container {
+	position: relative;
+	width: 100%;
 }
 
 #noise-level {
@@ -621,6 +631,42 @@ main {
     font-size: 16px;
     border: 1px solid var(--calculator_light-grey);
     border-radius: 5px;
+	width: 100%;
+}
+
+.custom__dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background: var(--white);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	z-index: 10;
+	overflow: hidden;
+}
+
+.hidden__dropdown{
+	display: none;
+}
+
+#noise-options {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.hd__items {
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.hd__items:hover {
+	background-color: var(--calculator_light-grey);
 }
 
 #btn-calc {
