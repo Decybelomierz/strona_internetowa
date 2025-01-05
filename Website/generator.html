@@ -7,7 +7,7 @@
 	<title>Decybelomierz</title>
 	<link rel="icon" href="images/logo_beznapisu.png" type="image/png" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="stylestyle.css" />
+	<link rel="stylesheet" href="style/style.css" />
 </head>
 
 <body>
@@ -40,9 +40,30 @@
 	</header>
 
     <main>
+		<div class="sound-generator__container">
+			<h1>Generator Relaksujących Dźwięków</h1>
+			<p>Wybierz dźwięk i dostosuj ich poziom głośności, aby stworzyć idealną atmosferę relaksującą</p>
+			<div class="sound__controls">
+				<div class="sound__option">
+					<label for="forest-sound">Las</label>
+					<input type="range" id="forest-sound" min="0" max="1" step="0.1" value="0">
+				</div>
+				<div class="sound__option">
+					<label for="rain-sound">Deszcz</label>
+					<input type="range" id="rain-sound" min="0" max="1" step="0.1" value="0">
+				</div>
+				<div class="sound__option">
+					<label for="fire-sound">Ognisko</label>
+					<input type="range" id="fire-sound" min="0" max="1" step="0.1" value="0">
+				</div>
+			</div>
+			<div class="actions">
+				<button id="stop-all">Zatrzymaj Wszystko</button>
+			</div>
+		</div>
 	</main>
 
-	<script src=""></script>
+	<script src="script/generator.js"></script>
 </body>
 
 </html>
