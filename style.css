@@ -230,6 +230,7 @@ main {
 }
 
 
+
 /* Materials Section */
 .materials__container{
 	display: grid;
@@ -338,14 +339,14 @@ main {
 	font-size: 24px; 
 	font-weight: 400;
 	line-height: 1.4;
-	max-height: 200px;
+	/* max-height: 200px;
 	overflow: hidden;
-	transition: max-height 0.4s ease;
+	transition: max-height 0.4s ease; */
 }
 
-.content.expanded {
+/* .content.expanded {
 	max-height: 2000px;
-}
+} */
 
 .text__toogle-button {
 	display: flex;
