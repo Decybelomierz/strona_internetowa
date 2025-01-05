@@ -7,7 +7,7 @@
 	<title>Decybelomierz</title>
 	<link rel="icon" href="images/logo_beznapisu.png" type="image/png" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style/style.css" />
 </head>
 
 <body>
@@ -40,32 +40,30 @@
 	</header>
 
     <main>
-		<div class="calculator__container">
-			<div class="calculator__main">
-				<h1>Kalkulator Narażenia na Hałas</h1>
-				<p>Wprowadź poziom hałasu w decybelach (dB) lub wybierz z listy propozycji, aby obliczyć maksymalny bezpieczny czas ekspozycji.</p>
-				<form id="noise-form">
-					<label for="noise-level" id="calculator-label">Poziom hałasu (dB):</label>
-					<div class="input__container">
-						<input type="number" id="noise-level" list="noise-suggestions" placeholder="Wprowadź wartość decybeli, np.(85)"  min="30" max="150" required>
-						<div class="custom__dropdown">
-							<ul class="hidden__dropdown" id="noise-options">
-								<li class="hd__items" data-value="60">Normalna rozmowa (60dB)</li>
-								<li class="hd__items" data-value="85">Próg bezpieczeństwa (85dB)</li>
-								<li class="hd__items" data-value="100">Ruch uliczny (100dB)</li>
-								<li class="hd__items" data-value="110">Koncert rockowy (110dB)</li>
-								<li class="hd__items" data-value="120">Wiertarka (120dB)</li>
-							</ul>
-						</div>
-					</div>
-					<button type="submit" id="btn-calc">Oblicz</button>
-				</form>
-				<div id="result"></div>
+		<div class="sound-generator__container">
+			<h1>Generator Relaksujących Dźwięków</h1>
+			<p>Wybierz dźwięk i dostosuj ich poziom głośności, aby stworzyć idealną atmosferę relaksującą</p>
+			<div class="sound__controls">
+				<div class="sound__option">
+					<label for="forest-sound">Las</label>
+					<input type="range" id="forest-sound" min="0" max="1" step="0.1" value="0">
+				</div>
+				<div class="sound__option">
+					<label for="rain-sound">Deszcz</label>
+					<input type="range" id="rain-sound" min="0" max="1" step="0.1" value="0">
+				</div>
+				<div class="sound__option">
+					<label for="fire-sound">Ognisko</label>
+					<input type="range" id="fire-sound" min="0" max="1" step="0.1" value="0">
+				</div>
+			</div>
+			<div class="actions">
+				<button id="stop-all">Zatrzymaj Wszystko</button>
 			</div>
 		</div>
 	</main>
 
-	<script src="calculator.js"></script>
+	<script src=""></script>
 </body>
 
 </html>
