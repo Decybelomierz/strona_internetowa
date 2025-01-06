@@ -18,6 +18,10 @@
 
 
 
+
+
+
+
 /* General Body Styling */
 * {
 	box-sizing: border-box;
@@ -32,6 +36,10 @@ body {
 	width: 100%;
 	overflow: visible;
 }
+
+
+
+
 
 
 
@@ -276,7 +284,7 @@ main {
 	font-size: 24px;
 	border-radius: 8px;
 	box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
-	transition: background-color 0.3s ease, font-size 0.2s ease, margin-left 0.3s ease;
+	transition: background-color 0.3s ease, font-size 0.2s ease;
 }
 
 /* Buttons animation */
@@ -581,6 +589,8 @@ main {
 
 
 
+
+
 /* CALCULATOR Section */
 .calculator__container {
     display: flex;
@@ -685,9 +695,93 @@ main {
     background-color: var(--button_darkerred);
 }
 
+#btn-calc:active {
+	background-color: var(--button_lighterred);
+}
+
 #result {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
     color: var(--calculator_grey);
+}
+
+
+
+
+
+
+
+/* GENERATOR Section */
+.sound-generator__container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	width: 100%;	
+}
+
+.sound-generator__main {
+	text-align: center;
+	background: var(--white);
+	padding: 45px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	width: 100%;
+}
+
+.sound-generator__main h1 {
+	color: var(--calculator_light-red);
+	font-size: 44px;
+	margin-bottom: 30px;
+}
+
+.sound-generator__main p {
+	font-size: 24px;
+	margin-bottom: 35px;
+}
+
+.sound__controls {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.sound__option {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sound__option label {
+	font-size: 20px;
+}
+
+.sound__input {
+	width: 70%;
+}
+
+#stop-all {
+	margin-top: 35px;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: none;
+	background-color: var(--button_lighterred);
+	color: var(--white);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, font-size 0.2s ease;
+}
+
+#stop-all:hover {
+	background-color: var(--button_darkerred);
+	font-size: 20px;
+	transform: scale(1.02);
+	z-index: 1;
+}
+
+#stop-all:active {
+	background-color: var(--button_lighterred);
+	transform: scale(1);
 }
