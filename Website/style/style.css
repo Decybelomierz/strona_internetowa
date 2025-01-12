@@ -299,7 +299,7 @@ main {
 .text__main {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	align-items: center;
 	width: 100%;
 }
 
@@ -316,7 +316,7 @@ main {
 	justify-content: center;
 	text-align: center;
 	width: 35%;
-	margin: 0 0 0 4%;
+	/* margin: 0 0 0 4%; */
 	gap: 10px;
 	max-width: 3000px;
 	padding: 5px 0 5px 15px;
@@ -387,7 +387,7 @@ main {
 	width: 100%;
 }
 
-.fundraising__content h2 {
+.fundraising__content p {
 	display: block;
 	width: 35%;
 	font-family: "Cambria";
@@ -594,7 +594,7 @@ main {
 		align-items: center;
 	}
 
-	.fundraising__content h2 {
+	.fundraising__content p {
 		width: 70%;
 		margin-bottom: 60px;
 		text-align: center;
@@ -809,4 +809,67 @@ main {
 #stop-all:active {
 	background-color: var(--button_lighterred);
 	transform: scale(1);
+}
+
+
+
+
+
+/* Simalator Section */
+.simulator__container {
+	text-align: center;
+	font-family: "Cambria";
+	padding: 20px;
+}
+
+#noise-slider {
+	width: 80%;
+	margin: 20px 0;
+}
+
+#visual-feeedback {
+	height: 100px;
+	width: 100px;
+	margin: 20px auto;
+	border-radius: 50%;
+	transition: background-color 0.3s ease;
+}
+
+.safe {
+	background-color: green;
+}
+
+.warning { 
+	background-color: yellow;
+}
+
+.danger {
+	background-color: red;
+}
+
+
+
+
+
+/* Quizz Section */
+.quizz__container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-family: "Cambria";
+}
+
+.quizz__container h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	margin: 120px 0 50px 0;
+}
+
+.quizz__main {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: 70%;
 }
