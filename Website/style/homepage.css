@@ -1,0 +1,654 @@
+/* Global variable */
+:root {
+	--white: #fff;
+	--black: #000;
+	--lightgrey: #e8e6e6;
+	--lightred: #ff1c1c;
+	--button_lighterred: #ff3b3b98;
+	--button_darkerred: #ff2c2cde;
+	--text_box_grey: #cacaca62;
+	--text_border_grey: #acacac;
+    --calculator_light-red: #cf4040;
+    --calculator_light-grey: #ddd;
+    --calculator_grey: #333;
+}
+
+
+
+/* General Body Styling */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Cambria';
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--lightgrey);
+	width: 100%;
+	overflow: visible;
+}
+
+
+
+/* Header Styling */
+header {
+	background: var(--white);
+	height: 110px;
+	display: flex;
+	font-size: 22px;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
+
+.navbar__container {
+	display: flex;
+	justify-content: space-between;
+	height: 110px;
+	z-index: 1;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#navbar__logo {
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	cursor: pointer;
+}
+
+.navbar__menu {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	text-align: center;
+}
+
+.navbar__item {
+	height: 110px;
+}
+
+.navbar__links {
+	color: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	height: 100%;
+	padding: 0 18px;
+}
+
+.navbar__links:hover {
+	color: #ff1c1c;
+	transition: all 0.3s ease;
+}
+
+
+
+/* Responsive Menu Fix */
+@media screen and (max-width: 960px) {
+	.navbar__container {
+		display: flex;
+		justify-content: space-between;
+		height: 110px;
+		z-index: 1;
+		width: 100%;
+		max-width: 1300px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navbar__menu {
+		display: grid;
+		grid-template-columns: auto;
+		background: var(--lightred);
+		padding: 0;
+		width: 100%;
+		position: absolute;
+		top: -1000px;
+		opacity: 0;
+		transition: all 0.5s ease;
+		height: 50vh;
+		z-index: -1;
+	}
+
+	.navbar__menu.active {
+		background: var(--white);
+		top: 100%;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 99;
+		font-size: calc(1vh + 12px);
+		height: 45vh;
+	}
+
+	#navbar__logo {
+		padding-left: 30px;
+	}
+
+	.navbar__toogle .bar {
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 6px auto;
+		transition: all 0.3s ease-in-out;
+		background: var(--black);
+		cursor: pointer;
+	}
+
+	.navbar__item {
+		width: 100%;
+		height: 100%;
+	}
+
+	.navbar__links {
+		display: table;
+		text-align: center;
+		padding: 35px;
+		width: 100%;
+	}
+
+	.navbar__links:hover {
+		color: var(--lightred);
+		transition: all 0.4s ease-out;
+	}
+
+	#mobile-menu {
+		position: absolute;
+		top: 25%;
+		right: 5%;
+		transform: translate(5%, 25%);
+	}
+
+
+	/* Rotating menu bar into x */
+	#mobile-menu.is-active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(1) {
+		transform: translateY(9.5px) rotate(45deg);
+		height: 4px;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(3) {
+		transform: translateY(-9.5px) rotate(-45deg);
+		height: 4px;
+	}
+	
+}
+
+
+
+/* Main Styling */
+main {
+	z-index: 99;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* HOMEPAGE Section */
+/* Background Image Section */
+.main__image-container {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: auto;
+	scroll-margin-top: 150px;
+}
+
+#main__img {
+	width: 100%;
+	height: auto; 
+	display: block;
+	margin: 0 0 20px 0;
+}
+
+.main__img-textoverlay {
+	position: absolute;
+	top: 35%; 
+	left: 33%;
+	transform: translateX(-50%);
+	color: var(--white);
+	font-family: 'Cambria';
+	font-size: calc(2vw + 14.4px); 
+	text-align: center;
+	z-index: 1; 
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Materials Section */
+.materials__container{
+	display: grid;
+	width: 100%;
+	padding: 80px 0 80px 0;
+	z-index: 1;
+	scroll-margin-top: 120px;
+}
+
+.materials__main {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.materials__main h1 {
+	display: flex;
+	justify-content: center;
+	font-family: "Cambria";
+	font-size: 44px;
+	margin: 0 0 calc(1.5vw + 60px) 0;
+}
+
+.materials__blocks {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px;
+	list-style: none;
+	text-align: center;
+}
+
+.materials__button {
+	width: 100%;
+}
+
+.btn {
+	background-color: var(--button_lighterred);
+	color: var(--white);
+	width: 340px;
+	height: 340px;
+	border: none;
+	cursor: pointer;
+	font-size: 24px;
+	border-radius: 8px;
+	box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease, font-size 0.2s ease;
+}
+
+/* Buttons animation */
+.btn:hover {
+	background-color: var(--button_darkerred);
+	font-size: 25px;
+	box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
+	transform: scale(1.03);
+	z-index: 1;
+}
+
+
+
+/* Article Section */
+.text__container {
+	display: flex;
+	width: 100%;
+	z-index: 1;
+	margin: 0;
+	scroll-margin-top: 120px;
+	padding: 60px 0 40px 0;
+}
+
+.text__main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.text__main h1 {
+	font-family: "Cambria";
+	text-align: center;
+	font-size: 44px; 
+	margin: 0 0 calc(1.5vw + 50px) 0;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 35%;
+	/* margin: 0 0 0 4%; */
+	gap: 10px;
+	max-width: 3000px;
+	padding: 5px 0 5px 15px;
+	/* border-radius: 10px;
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+	border: 3px solid var(--text_box_grey);
+	background-color: var(--text_box_grey); */
+}
+
+.content {
+	display: block;
+	font-family: 'Cambria';
+	margin: 5px 0;
+	width: 95%;
+	text-align: left;
+	font-size: 24px; 
+	font-weight: 400;
+	line-height: 1.4;
+	/* max-height: 200px;
+	overflow: hidden;
+	transition: max-height 0.4s ease; */
+}
+
+/* .content.expanded {
+	max-height: 2000px;
+} */
+
+.text__toogle-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 15px 0 0;
+	padding: 2px 0 5px 0;
+	font-family: "Cambria";
+	font-size: 20px;
+}
+
+
+
+/* Fundrising Section */
+.fundraising__container {
+	display: flex;
+	width: 100%;
+	z-index: 1;
+	padding: 60px 0 0 0;
+}
+
+.fundraising__main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.fundraising__main h1 {
+	display: flex;
+	font-family: "Cambria";
+	font-size: 44px;
+	margin: calc(1vw + 20px) 0 calc(1.5vw + 50px) 0;
+}
+
+.fundraising__content {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.fundraising__text-box {
+	display: block;
+	width: 35%;
+	font-family: "Cambria";
+	font-size: 24px;
+	margin: 0 5% 0 0;
+	padding: 5px 0 5px 15px;
+	text-align: left;
+	font-weight: 400;
+	line-height: 1.3;
+	/* border-radius: 10px;
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+	border: 3px solid var(--text_box_grey);
+	background-color: var(--text_box_grey); */
+}
+
+
+
+/* Partner-ship Section */
+.partner-ship__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.partner-ship__main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.partner-ship__main h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 44px;
+	margin: 90px 0 60px 0;
+}
+
+.partner-ship__shifter {
+	display: flex;
+	width: 70%;
+	margin-left: 15%;
+	padding: 10px 0;
+	overflow: auto;
+}
+
+.partner__icon {
+	height: 125px;
+	margin: 0 10px;
+	border-radius: 4px;
+}
+
+
+
+/* Footer Section */
+.footer__container {
+	font-size: 22px;
+	padding: 80px 0 80px 0;
+}
+
+#footer__logo {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+
+/* Social Icons */
+.social__media {
+	width: 100%;
+}
+
+.social__media-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	max-width: 1000px;
+	margin: 10px auto 10px auto;
+}
+
+.social__icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 200px;
+}
+
+.social__icon-link {
+	color: var(--black);
+	font-size: 24px;
+}
+
+.social__logo {
+	color: var(--black);
+	justify-self: flex-start;
+	margin-left: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.website__rights {
+	color: var(--black);	
+}
+
+
+
+/* Responsive Homepage Section Fix */
+@media screen and (max-width: 1180px) {
+	/* Materials Section */
+	.materials__main h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.materials__blocks {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 80px;
+	}
+
+	.materials__button {
+		width: 100%;
+	}
+
+	.btn {
+		width: 340px;
+		height: 340px;
+		border: none;
+		cursor: pointer;
+		font-size: 24px;
+	}
+
+	.btn:hover {
+		background-color: var(--button_darkerred);
+		font-size: 25px;
+		box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
+		transform: scale(1.02);
+	}
+
+
+
+	/* Partnership Section */
+	.partner-ship__main h1 {
+		font-size: 38px;
+	}
+
+	.partner-ship__shifter {
+		width: 80%;
+		margin-left: 8%;
+	}
+	
+	.partner__icon {
+		height: 120px;
+	}
+
+
+
+	/* Footer Section */
+	.footer__container {
+		font-size: calc(1vw + 14px);
+	}
+
+	.footer__links {
+		padding-top: 32px;
+	}
+
+	#footer__logo {
+		margin-bottom: 32px;
+	}
+
+	.website__rights {
+		margin-bottom: 32px;
+	}
+
+	.footer__link-wrapper {
+		flex-direction: column;
+	}
+
+	.social__media-wrap {
+		flex-direction: column;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+	/* Materials Section */
+	.materials__main h1 {
+		font-size: 38px;
+	}
+
+	.materials__blocks {
+		grid-template-columns: repeat(1,1fr);
+		gap: 70px;
+	}
+
+	.btn {
+		width: 300px;
+		height: 300px;
+	}
+
+
+
+	/* Article Section */
+	.text__main h1 {
+		font-size: 38px;
+	}
+
+	.text {
+		width: 70%;
+	}
+
+	.content {
+		text-align: center;
+	}
+
+
+
+	/* Fundrising Section */
+	.fundraising__main h1 {
+		font-size: 36px;
+	}
+
+	.fundraising__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.fundraising__content p {
+		width: 70%;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+
+
+	/* Partnership Section */
+	.partner-ship__main h1 {
+		font-size: 38px;
+	}
+
+	.partner-ship__shifter {
+		width: 85%;
+		margin-left: 6%;
+	}
+	
+	.partner__icon {
+		height: 100px;
+	}
+
+
+
+	/* Footer Section */
+	.footer__link-items{
+		margin: 0px;
+		padding: 10px;
+		width: 100%;
+	}
+}

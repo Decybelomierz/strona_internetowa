@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="vieport" content="width=device=width,initial-scale=1.0" />
+	<title>Decybelomierz</title>
+	<link rel="icon" href="images/logo_beznapisu.png" type="image/png" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style/hearing test.css" />
+</head>
+
+<body>
+	<header>
+		<div class="navbar__container">
+			<a href="homepage.html#start" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
+			<div class="navbar__toogle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="navbar__menu">
+				<li class="navbar__item">
+					<a href="homepage.html" class="navbar__links">Strona główna</a>
+				</li>
+                <li class="navbar__item">
+					<a href="homepage.html#materialy" class="navbar__links">Materiały</a>
+				</li>
+				<li class="navbar__item">
+					<a href="homepage.html#o_projekcie" class="navbar__links">O projekcie</a>
+				</li>
+				<li class="navbar__item">
+					<a href="homepage.html#zrzutka" class="navbar__links">Wsparcie</a>
+				</li>
+				<li class="navbar__item">
+					<a href="homepage.html#kontakt" class="navbar__links">Kontakt</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+        <div class="hearing-test__container">
+            <h1>Test słuchu</h1>
+			<p>Sprawdź jak stary jest twój słuch, zatrzymaj nagranie kiedy przestaniesz słyszeć dźwięk</p>
+            <div class="hearing-test__rectangle" id="box">
+				<div class="hearing-test__rectangle-line" id="line"></div>
+			</div>
+            <div class="hearing-test__button-section">
+				<div class="hearing-test__button-main">
+                	<button class="hearing-test__button" data-action="start">Start</button>
+                	<button class="hearing-test__button" data-action="stop">Stop</button>
+				</div>
+				<button class="hearing-test__button" data-action="restart">Restart</button>
+            </div>
+        </div>
+	</main>
+
+	<script src="script/hearing test.js"></script>
+</body>
+
+</html>
