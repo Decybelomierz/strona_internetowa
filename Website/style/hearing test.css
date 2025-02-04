@@ -202,7 +202,7 @@ main {
 	align-items: center;
 }
 
-.hearing-test__container h1 {
+/* .hearing-test__container h1 {
 	font-size: 48px; 
 	margin: 150px 0 20px 0;
 	color: var(--calculator_light-red);
@@ -213,39 +213,68 @@ main {
 	font-size: 26px;
 	margin-bottom: 180px;
 	width: 50%;
-}
+} */
 
 /* .hearing-test__main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
+	border: 2px solid var(--white);
 }
 
 .hearing-test__main h1 {
 	font-size: 48px; 
 	margin: 150px 0 20px 0;
-}
+	color: var(--calculator_light-red);
+} 
 
 .hearing-test__main p {
-	font-size: 24px;
+	text-align: center;
+	font-size: 26px;
 	margin-bottom: 180px;
-} */
+	width: 50%;
+}*/
+
+.hearing-test__info { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 538px;
+	height: 300px;
+	margin: 100px 0 200px 0;
+	border: 3px solid var(--white);
+	border-radius: 6px;
+	background-color: var(--white);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hearing-test__info h1 { 
+	font-size: 48px; 
+	margin-bottom: 15px;
+	color: var(--calculator_light-red);
+}
+
+.hearing-test__info p { 
+	text-align: center;
+	font-size: 26px;
+	width: 50%;
+}
 
 .hearing-test__rectangle {
 	height: 130px;
-	width: 80%;
+	width: 1024px;
 	position: relative;
 	overflow: hidden;
 	border: 3px solid var(--black);
-	background-color: var(--white);
+	background-color: var(--calculator_light-grey);
 }
 
 .hearing-test__rectangle-line {
 	width: 3px;
 	height: 124px;
 	position: absolute;
-	border: 1px solid var(--black);
 	background-color: var(--black);
 }
 

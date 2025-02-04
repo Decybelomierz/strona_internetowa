@@ -5,15 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
     let animation;
 
     function startAnimation() {
+        line.style.background = "#cf4040"
         stopAnimation();
         animation = setInterval(() => {
-            if (position >= 1010) {
+            if (position >= 1024) {
                 stopAnimation();
             } else {
                 position += 1;
             }
             line.style.left = position + "px";
-            box.style.background = `linear-gradient(to right, #cf4040 ${position}px, white ${position}px)`
+            box.style.background = `linear-gradient(to right, #cf4040 ${position}px, #ddd ${position}px)`
         }, 10);
     }
 
@@ -24,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function restartAnimation() {
         stopAnimation();
         position = 0;
+        line.style.background = "black";
         line.style.left = "0px";
-        box.style.background = "white"
+        box.style.background = "#ddd"
     }
 
     document.querySelector("button[data-action='start']").addEventListener("click", startAnimation);
