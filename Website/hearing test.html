@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<div class="navbar__container">
-			<a href="homepage.html#start" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
+			<a href="index.html#start" id="navbar__logo"><img src="images/logo4.png" alt="LOGO"></a>
 			<div class="navbar__toogle" id="mobile-menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -21,19 +21,19 @@
 			</div>
 			<ul class="navbar__menu">
 				<li class="navbar__item">
-					<a href="homepage.html" class="navbar__links">Strona główna</a>
+					<a href="index.html" class="navbar__links">Strona główna</a>
 				</li>
                 <li class="navbar__item">
-					<a href="homepage.html#materialy" class="navbar__links">Materiały</a>
+					<a href="index.html#materialy" class="navbar__links">Materiały</a>
 				</li>
 				<li class="navbar__item">
-					<a href="homepage.html#o_projekcie" class="navbar__links">O projekcie</a>
+					<a href="index.html#o_projekcie" class="navbar__links">O projekcie</a>
 				</li>
 				<li class="navbar__item">
-					<a href="homepage.html#zrzutka" class="navbar__links">Wsparcie</a>
+					<a href="index.html#zrzutka" class="navbar__links">Wsparcie</a>
 				</li>
 				<li class="navbar__item">
-					<a href="homepage.html#kontakt" class="navbar__links">Kontakt</a>
+					<a href="index.html#kontakt" class="navbar__links">Kontakt</a>
 				</li>
 			</ul>
 		</div>
@@ -41,24 +41,36 @@
 
 	<main>
         <div class="hearing-test__container">
-			<div class="hearing-test__info">
+			<div class="hearing-test__main">
             	<h1>Test słuchu</h1>
 				<p>Sprawdź jak stary jest twój słuch, zatrzymaj nagranie kiedy przestaniesz słyszeć dźwięk</p>
-			</div>
-            <div class="hearing-test__rectangle" id="box">
-				<div class="hearing-test__rectangle-line" id="line"></div>
-			</div>
-            <div class="hearing-test__button-section">
-				<div class="hearing-test__button-main">
-                	<button class="hearing-test__button" data-action="start">Start</button>
-                	<button class="hearing-test__button" data-action="stop">Stop</button>
+            	<div class="rectangle" id="box">
+					<div class="rectangle__line" id="line"></div>
 				</div>
-				<button class="hearing-test__button" data-action="restart">Restart</button>
-            </div>
+				<div class="underline__text">
+					<p class="number">90</p>
+					<p class="number">80</p>
+					<p class="number">70</p>
+					<p class="number">60</p>
+					<p class="number">50</p>
+					<p class="number">40</p>
+					<p class="number">30</p>
+					<p class="number">20</p>
+					<p class="number">10</p>
+				</div>
+				<div class="check__box"></div>
+            	<div class="button__section">
+					<div class="button__main">
+            	    	<button class="button" id="hearing-test-start" data-action="start">Start</button>
+            	    	<button class="button" id="hearing-test-stop" data-action="stop">Stop</button>
+					</div>
+					<button class="button" id="hearing-test-restart" data-action="restart">Restart</button>
+            	</div>
+			</div>
         </div>
 	</main>
 
-	<script src="script/hearing test.js"></script>
+	<script src="script/hearing_test.js"></script>
 </body>
 
 </html>

@@ -215,28 +215,34 @@ main {
 	width: 50%;
 } */
 
-/* .hearing-test__main {
+.hearing-test__main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	border: 2px solid var(--white);
+	width: 1100px;
+	height: 900px;
+	margin: 100px 0 200px 0;
+	border: 3px solid var(--white);
+	border-radius: 6px;
+	background-color: var(--white);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hearing-test__main h1 {
 	font-size: 48px; 
-	margin: 150px 0 20px 0;
+	margin: 100px 0 20px 0;
 	color: var(--calculator_light-red);
 } 
 
 .hearing-test__main p {
 	text-align: center;
 	font-size: 26px;
-	margin-bottom: 180px;
+	margin-bottom: 150px;
 	width: 50%;
-}*/
+}
 
-.hearing-test__info { 
+/* .hearing-test__info { 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -260,9 +266,9 @@ main {
 	text-align: center;
 	font-size: 26px;
 	width: 50%;
-}
+} */
 
-.hearing-test__rectangle {
+.rectangle {
 	height: 130px;
 	width: 1024px;
 	position: relative;
@@ -271,27 +277,47 @@ main {
 	background-color: var(--calculator_light-grey);
 }
 
-.hearing-test__rectangle-line {
+.rectangle__line {
 	width: 3px;
 	height: 124px;
 	position: absolute;
 	background-color: var(--black);
 }
 
-.hearing-test__button-section {
+.underline__text {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	width: 1024px;
+}
+
+.number {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+}
+
+.check__box {
+	width: 200px;
+	height: 80px;
+	margin: 30px 0 ;
+	background-color: #acacac;
+}
+
+.button__section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	margin-top: 80px;
+	margin-top: 20px;
 }
 
-.hearing-test__button-main {
+.button__main {
 	margin-bottom: 25px;
 }
 
-.hearing-test__button { 
+.button { 
 	font-size: 20px;
 	padding: 20px 80px;
 	margin: 0 30px;
@@ -303,10 +329,10 @@ main {
 	cursor: pointer;
 }
 
-.hearing-test__button:hover {
+.button:hover {
 	background-color: var(--button_darkerred);
 }
 
-.hearing-test__button:active {
+.button:active {
 	background-color: var(--button_lighterred);
 }
