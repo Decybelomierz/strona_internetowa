@@ -34,11 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
             resultDiv.style.color = "green";
         }
     });
-});
 
-
-// Pole wyboru na inpucie
-document.addEventListener("DOMContentLoaded", function() {
+    // Pole wyboru na inpucie
     const noiseInput = document.getElementById("noise-level");
     const dropdown = document.getElementById("noise-options");
 
@@ -53,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             dropdown.classList.add("hidden__dropdown");
         }
     });
-
+    
     // Obsługa wyboru elementu z listy
     document.addEventListener("click", function(e) {
         if (e.target.tagName === "LI") {
