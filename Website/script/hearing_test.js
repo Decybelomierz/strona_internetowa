@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Sekcja nagłówkowa
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.navbar__menu');
+    const oneLink = document.querySelectorAll('.navbar__item');
+
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    });
+    
     const sound = {
         hearing_test: new Audio("sounds/hearing_test.mp3"),
     };
@@ -44,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Deklaracja liczników
     const resultAge = document.getElementById("js-text-age");
     const resultHz = document.getElementById("js-text-hz");
-    let startAge = 99, i = 1, currentAge, intervalAge; 
+    let startAge = 99, currentAge = startAge, intervalAge; 
     let startHz = 550, currentHz = startHz, intervalHz;
 
     function countingAge(stop) {
@@ -53,12 +63,9 @@ document.addEventListener("DOMContentLoaded", function() {
             resultAge.textContent = currentAge.toFixed(0);
             return;
         }
-        
-        // Zapobiega wielokrotnemu uruchomieniu interwału
-        if (intervalAge) return;
 
         intervalAge = setInterval(() => {
-            currentAge = startAge - (i * 1.65);
+            currentAge = currentAge - 0.165;
             resultAge.textContent = currentAge.toFixed(0);
             resultAge.style.color = "white"
 
@@ -69,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             i++
-        }, 1000);
+        }, 100);
     };
 
     function countingHz(stop) {
@@ -78,9 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
             resultHz.textContent = currentHz.toFixed(0);
             return;
         }
-
-        // Zapobiega wielokrotnemu uruchomieniu interwału
-        if (intervalHz) return;
 
         intervalHz = setInterval(() => {
             currentHz = currentHz + 3.350;
@@ -126,7 +130,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         currentAge = startAge;
         currentHz = startHz;
-        i = 1;
 
         resultAge.textContent = "99"
         resultAge.style.color = "white"

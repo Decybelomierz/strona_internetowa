@@ -1,5 +1,14 @@
-// Główna część kalkulatora
 document.addEventListener("DOMContentLoaded", function() {
+    // Sekcja nagłówkowa
+    const menu = document.querySelector ('#mobile-menu');
+    const menuLinks = document.querySelector('.navbar__menu');
+    const oneLink = document.querySelectorAll('.navbar__item');
+
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    });
+
     const form = document.getElementById("noise-form");
     const resultDiv = document.getElementById("result");
 
