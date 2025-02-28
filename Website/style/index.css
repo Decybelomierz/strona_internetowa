@@ -194,10 +194,9 @@ main {
 	width: 100%;
 	height: auto;
 	display: block;
-	margin: 0 0 20px 0;
 }
 
-.main__img-textoverlay {
+/* .main__img-textoverlay {
 	position: absolute;
 	top: 35%;
 	left: 33%;
@@ -208,15 +207,22 @@ main {
 	text-align: center;
 	z-index: 1;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+} */
 
 /* Materials Section */
 .materials__container {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	padding: 80px 0 80px 0;
 	z-index: 1;
 	scroll-margin-top: 120px;
+}
+
+.materials__container-h1 {
+	height: 300px;
+	margin: 10px 0 20px 0;
 }
 
 .materials__main {
@@ -225,14 +231,6 @@ main {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-}
-
-.materials__main h1 {
-	display: flex;
-	justify-content: center;
-	font-family: "Cambria";
-	font-size: 44px;
-	margin: 0 0 calc(1.5vw + 60px) 0;
 }
 
 .materials__blocks-functionality {
@@ -254,6 +252,19 @@ main {
 	width: 100%;
 }
 
+.img-btn {
+	cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
+	transition: 0.3 ease-in-out;
+}
+
+.img-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
 .btn {
 	background-color: var(--button_lighterred);
 	color: var(--white);
@@ -267,7 +278,6 @@ main {
 	transition: background-color 0.3s ease, font-size 0.2s ease;
 }
 
-/* Buttons animation */
 .btn:hover {
 	background-color: var(--button_darkerred);
 	font-size: 25px;
@@ -283,7 +293,6 @@ main {
 	z-index: 1;
 	margin: 0;
 	scroll-margin-top: 120px;
-	padding: 60px 0 40px 0;
 }
 
 .text__main {
@@ -293,11 +302,9 @@ main {
 	width: 100%;
 }
 
-.text__main h1 {
-	font-family: "Cambria";
-	text-align: center;
-	font-size: 44px;
-	margin: 0 0 calc(1.5vw + 50px) 0;
+.text__main-h1 {
+	height: 300px;
+	margin-top: 80px;
 }
 
 .text {
@@ -350,7 +357,6 @@ main {
 	display: flex;
 	width: 100%;
 	z-index: 1;
-	padding: 60px 0 0 0;
 }
 
 .fundraising__main {
@@ -361,11 +367,9 @@ main {
 	width: 100%;
 }
 
-.fundraising__main h1 {
-	display: flex;
-	font-family: "Cambria";
-	font-size: 44px;
-	margin: calc(1vw + 20px) 0 calc(1.5vw + 50px) 0;
+.fundraising__main-h1 {
+	height: 300px;
+	margin: 30px 0;
 }
 
 .fundraising__content {
@@ -405,12 +409,9 @@ main {
 	width: 100%;
 }
 
-.partner-ship__main h1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 44px;
-	margin: 90px 0 60px 0;
+.partner-ship__main-h1 {
+	height: 300px;
+	margin-top: 40px;
 }
 
 .partner-ship__shifter {

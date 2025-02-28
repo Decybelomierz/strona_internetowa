@@ -17,7 +17,22 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    // Sekcja przycisków
+    const images = document.querySelectorAll('.materials__main img');
 
+    images.forEach(img => {
+        const orginalSrc = img.src;
+        const hoverSrc = img.getAttribute('data-hover');
+
+        img.addEventListener('mouseenter', () => {
+            img.src = hoverSrc
+        });
+
+        img.addEventListener('mouseleave', () => {
+            img.src = orginalSrc
+        });
+    });
+    
 
     // Sekcja tekstu o nas
     // const toggleButton = document.querySelector('.text__toogle-button');
