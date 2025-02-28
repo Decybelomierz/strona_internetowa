@@ -515,9 +515,14 @@ main {
 		justify-content: center;
 	}
 
-	.materials__blocks {
-		grid-template-columns: repeat(2, 1fr);
+	.materials__blocks-functionality {
+		grid-template-columns: repeat(1, 1fr);
 		gap: 80px;
+	}
+
+	.materials__blocks-materials {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
 	}
 
 	.materials__button {
@@ -589,11 +594,6 @@ main {
 	/* Materials Section */
 	.materials__main h1 {
 		font-size: 38px;
-	}
-
-	.materials__blocks {
-		grid-template-columns: repeat(1,1fr);
-		gap: 70px;
 	}
 
 	.btn {
