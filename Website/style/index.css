@@ -226,7 +226,7 @@ main {
 
 /* Materials Section */
 .materials__container{
-	display: grid;
+	display: flex;
 	width: 100%;
 	padding: 80px 0 80px 0;
 	z-index: 1;
@@ -234,9 +234,11 @@ main {
 }
 
 .materials__main {
-	display: grid;
-	align-items: center;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .materials__main h1 {
@@ -247,12 +249,19 @@ main {
 	margin: 0 0 calc(1.5vw + 60px) 0;
 }
 
-.materials__blocks {
+.materials__blocks-functionality {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 60px;
 	list-style: none;
 	text-align: center;
+}
+
+.materials__blocks-materials {
+	display: flex;
+	gap: 60px;
+	list-style: none;
+	margin-top: 50px;
 }
 
 .materials__button {
