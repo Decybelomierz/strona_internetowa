@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Sekcja przycisków
-    const images = document.querySelectorAll('.materials__main img');
+    const images = document.querySelectorAll('#image');
 
     images.forEach(img => {
         const orginalSrc = img.src;

@@ -45,8 +45,6 @@ header {
 	height: 110px;
 	z-index: 1;
 	width: 100%;
-	margin: 0 auto;
-	padding: 0 20px;
 }
 
 #navbar__logo {
@@ -60,7 +58,6 @@ header {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	text-align: center;
 }
 
 .navbar__item {
@@ -68,18 +65,21 @@ header {
 }
 
 .navbar__links {
-	color: var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-decoration: none;
 	height: 100%;
-	padding: 0 18px;
+	width: 100%;
 }
 
 .navbar__links:hover {
-	color: #ff1c1c;
 	transition: all 0.3s ease;
+}
+
+.navbar__image {
+	height: 110px;
+	width: 170px;
+	border: 3px solid black;
 }
 
 /* Responsive Menu Fix */
@@ -97,7 +97,7 @@ header {
 
 	.navbar__menu {
 		display: grid;
-		grid-template-columns: auto;
+		grid-template-columns: repeat(1fr, 1);
 		background: var(--lightred);
 		padding: 0;
 		width: 100%;
@@ -115,7 +115,6 @@ header {
 		opacity: 1;
 		transition: all 0.5s ease;
 		z-index: 99;
-		font-size: calc(1vh + 12px);
 		height: 45vh;
 	}
 
@@ -134,14 +133,16 @@ header {
 	}
 
 	.navbar__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
-		height: 100%;
+		height: 50%;
 	}
 
 	.navbar__links {
 		display: table;
 		text-align: center;
-		padding: 35px;
 		width: 100%;
 	}
 
@@ -252,20 +253,20 @@ main {
 	width: 100%;
 }
 
-.img-btn {
+.img__btn {
 	cursor: pointer;
 	border-radius: 8px;
 	box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
 	transition: 0.3 ease-in-out;
 }
 
-.img-btn:hover {
+.img__btn:hover {
 	transform: scale(1.05);
 	box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
 	z-index: 1;
 }
 
-.btn {
+/* .btn {
 	background-color: var(--button_lighterred);
 	color: var(--white);
 	width: 340px;
@@ -284,7 +285,7 @@ main {
 	box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
 	transform: scale(1.03);
 	z-index: 1;
-}
+} */
 
 /* Article Section */
 .text__container {
@@ -484,12 +485,6 @@ main {
 /* Responsive Homepage Section Fix */
 @media screen and (max-width: 1180px) {
 	/* Materials Section */
-	.materials__main h1 {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
 	.materials__blocks-functionality {
 		grid-template-columns: repeat(1, 1fr);
 		gap: 80px;
@@ -504,7 +499,7 @@ main {
 		width: 100%;
 	}
 
-	.btn {
+	/* .btn {
 		width: 340px;
 		height: 340px;
 		border: none;
@@ -517,13 +512,9 @@ main {
 		font-size: 25px;
 		box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
 		transform: scale(1.02);
-	}
+	} */
 
 	/* Partnership Section */
-	.partner-ship__main h1 {
-		font-size: 38px;
-	}
-
 	.partner-ship__shifter {
 		width: 70%;
 	}
@@ -560,8 +551,8 @@ main {
 
 @media screen and (max-width: 800px) {
 	/* Materials Section */
-	.materials__main h1 {
-		font-size: 38px;
+	.materials__main-h1 {
+		height: 250px;
 	}
 
 	.btn {
@@ -583,8 +574,8 @@ main {
 	}
 
 	/* Fundrising Section */
-	.fundraising__main h1 {
-		font-size: 36px;
+	.fundraising__main-h1 {
+		height: 250px;
 	}
 
 	.fundraising__content {
@@ -601,13 +592,12 @@ main {
 	}
 
 	/* Partnership Section */
-	.partner-ship__main h1 {
-		font-size: 38px;
+	.partner-ship__main-h1 {
+		height: 250px;
 	}
 
 	.partner-ship__shifter {
 		width: 85%;
-		margin-left: 6%;
 	}
 
 	.partner__icon {
