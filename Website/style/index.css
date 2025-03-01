@@ -223,7 +223,7 @@ main {
 
 .materials__container-h1 {
 	height: 300px;
-	margin: 10px 0 20px 0;
+	margin-top: 10px;
 }
 
 .materials__main {
@@ -305,7 +305,7 @@ main {
 
 .text__main-h1 {
 	height: 300px;
-	margin-top: 80px;
+	margin: 90px 0 -20px 0;
 }
 
 .text {
@@ -340,7 +340,7 @@ main {
 
 /* .content.expanded {
 	max-height: 2000px;
-} */
+}
 
 .text__toogle-button {
 	display: flex;
@@ -351,7 +351,7 @@ main {
 	padding: 2px 0 5px 0;
 	font-family: "Cambria";
 	font-size: 20px;
-}
+} */
 
 /* Fundrising Section */
 .fundraising__container {
@@ -370,7 +370,7 @@ main {
 
 .fundraising__main-h1 {
 	height: 300px;
-	margin: 30px 0;
+	margin-top: 30px;
 }
 
 .fundraising__content {
@@ -499,6 +499,11 @@ main {
 		width: 100%;
 	}
 
+	.img__btn {
+		width: 300px;
+		height: 300px;
+	}
+
 	/* .btn {
 		width: 340px;
 		height: 340px;
@@ -551,18 +556,23 @@ main {
 
 @media screen and (max-width: 800px) {
 	/* Materials Section */
-	.materials__main-h1 {
+	.materials__container-h1 {
 		height: 250px;
 	}
 
-	.btn {
-		width: 300px;
-		height: 300px;
+	.materials__blocks-functionality {
+		gap: 50px;
+	}
+
+	.img__btn {
+		width: 280px;
+		height: 280px;
 	}
 
 	/* Article Section */
-	.text__main h1 {
-		font-size: 38px;
+	.text__main-h1 {
+		height: 250px;
+		margin-bottom: -30px;
 	}
 
 	.text {
@@ -575,7 +585,8 @@ main {
 
 	/* Fundrising Section */
 	.fundraising__main-h1 {
-		height: 250px;
+		height: 210px;
+		margin: 60px 0 -10px 0;
 	}
 
 	.fundraising__content {
@@ -591,9 +602,14 @@ main {
 		text-align: center;
 	}
 
+	.fundraising__content iframe {
+		width: 400px;
+	}
+
 	/* Partnership Section */
 	.partner-ship__main-h1 {
-		height: 250px;
+		height: 210px;
+		margin: 40px 0 -20px 0;
 	}
 
 	.partner-ship__shifter {

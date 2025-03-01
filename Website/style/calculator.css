@@ -30,7 +30,7 @@
 body {
 	background-color: var(--lightgrey);
 	width: 100%;
-	overflow: visible;
+	overflow: hidden;
 }
 
 
