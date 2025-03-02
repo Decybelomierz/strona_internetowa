@@ -75,18 +75,25 @@ header {
 }
 
 .navbar__links {
-	color: var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-decoration: none;
 	height: 100%;
-	padding: 0 18px;
+	width: 100%;
 }
 
 .navbar__links:hover {
-	color: #ff1c1c;
 	transition: all 0.3s ease;
+}
+
+.navbar__image {
+	height: 110px;
+	width: 170px;
+}
+
+#image-mat {
+	margin-left: 20px;
+	margin-right: -10px;
 }
 
 
