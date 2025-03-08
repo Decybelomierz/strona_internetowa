@@ -461,6 +461,10 @@ main {
 /* Responsive Homepage Section Fix */
 @media screen and (max-width: 1080px) {
 	/* Materials Section */
+	.materials__container-h1 {
+		height: 320px;
+	}
+
 	.materials__blocks {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -507,11 +511,11 @@ main {
 
 	/* Partnership Section */
 	.partner-ship__shifter {
-		width: 70%;
+		width: 80%;
 	}
 
 	.partner__icon {
-		height: 120px;
+		height: 150px;
 	}
 
 	/* Footer Section */
