@@ -250,7 +250,15 @@ main {
 	width: 100%;
 }
 
-.materials__blocks-functionality {
+.materials__blocks {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px;
+	list-style: none;
+	justify-content: center;
+}
+
+/* .materials__blocks-functionality {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 60px;
@@ -263,10 +271,22 @@ main {
 	gap: 60px;
 	list-style: none;
 	margin-top: 50px;
-}
+} */
 
 .materials__button {
+	display: flex;
+	justify-content: center;
 	width: 100%;
+}
+
+.materials__button:nth-child(4) {
+	grid-row: 2;
+	grid-column: 1 / span 2;
+}
+
+.materials__button:nth-child(5) {
+	grid-row: 2;
+	grid-column: 2 / span 2;
 }
 
 .img__btn {
@@ -282,26 +302,6 @@ main {
 	z-index: 1;
 }
 
-/* .btn {
-	background-color: var(--button_lighterred);
-	color: var(--white);
-	width: 340px;
-	height: 340px;
-	border: none;
-	cursor: pointer;
-	font-size: 24px;
-	border-radius: 8px;
-	box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
-	transition: background-color 0.3s ease, font-size 0.2s ease;
-}
-
-.btn:hover {
-	background-color: var(--button_darkerred);
-	font-size: 25px;
-	box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
-	transform: scale(1.03);
-	z-index: 1;
-} */
 
 /* Article Section */
 .text__container {
@@ -330,7 +330,6 @@ main {
 	justify-content: center;
 	text-align: center;
 	width: 35%;
-	/* margin: 0 0 0 4%; */
 	gap: 10px;
 	max-width: 3000px;
 	padding: 5px 0 5px 15px;
@@ -353,21 +352,6 @@ main {
 	overflow: hidden;
 	transition: max-height 0.4s ease; */
 }
-
-/* .content.expanded {
-	max-height: 2000px;
-}
-
-.text__toogle-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin: 0 15px 0 0;
-	padding: 2px 0 5px 0;
-	font-family: "Cambria";
-	font-size: 20px;
-} */
 
 /* Fundrising Section */
 .fundraising__container {
@@ -499,41 +483,27 @@ main {
 }
 
 /* Responsive Homepage Section Fix */
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1080px) {
 	/* Materials Section */
-	.materials__blocks-functionality {
-		grid-template-columns: repeat(1, 1fr);
+	.materials__blocks {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 80px;
 	}
 
-	.materials__blocks-materials {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+	.materials__button:nth-child(4){
+		grid-row: auto;
+		grid-column: auto;
+	}
+
+	.materials__button:nth-child(5) {
+		grid-row: 3;
+		grid-column: 1 / span 2;
 	}
 
 	.materials__button {
 		width: 100%;
 	}
-
-	.img__btn {
-		width: 300px;
-		height: 300px;
-	}
-
-	/* .btn {
-		width: 340px;
-		height: 340px;
-		border: none;
-		cursor: pointer;
-		font-size: 24px;
-	}
-
-	.btn:hover {
-		background-color: var(--button_darkerred);
-		font-size: 25px;
-		box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.3);
-		transform: scale(1.02);
-	} */
 
 	/* Partnership Section */
 	.partner-ship__shifter {
