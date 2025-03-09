@@ -51,4 +51,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('btn-cart').addEventListener("click", function() {
         downloadPDF('style/download/karty_edukacyjne.pdf','Karty_Edukacyjne.pdf');
     });
+
+    document.getElementById('btn-color').addEventListener("click", function() {
+        downloadPDF('style/download/Kolorowanki.zip','Kolorowanki.zip');
+    });
 });
