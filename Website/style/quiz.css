@@ -30,7 +30,7 @@
 body {
 	background-color: var(--lightgrey);
 	width: 100%;
-	overflow: hidden;
+	overflow: visible;
 }
 
 
@@ -214,23 +214,78 @@ main {
 /* Quizz Section */
 .quizz__container {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	width: 100%;
 	font-family: "Cambria";
 }
 
-.quizz__container h1 {
+#main-title {
 	display: flex;
-	justify-content: center;
+	text-align: center;
 	align-items: center;
-	font-size: 44px;
-	margin: 120px 0 50px 0;
+	width: 650px;
+	height: 150px;
+	font-size: 48px;
+	margin: 40px 0 50px 0;
 	color: var(--calculator_light-red);
+	background-color: var(--white);
+	border-radius: 8px;
 }
 
 .quizz__main {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-self: center;
+	align-items: center;
 	width: 70%;
+}
+
+.game__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 900px;
+	height: 600px;
+	margin-bottom: 80px;
+	background-color: var(--white);
+	border-radius: 12px;
+}
+
+.title {
+	font-size: 38px;
+	color: var(--calculator_light-red);
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+#filling-gaps {
+	width: 100%;
+}
+
+#crossword-puzzle {
+	width: 100%;
+}
+
+
+@media screen and (max-width: 1080px) {
+	#main-title {
+		font-size: 52px;
+	}
+	
+	.title {
+		font-size: 44px;
+	}
+}
+
+
+@media screen and (max-width: 960px) {
+	.game__box {
+		width: 810px;
+	}
+	
+	.title {
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
 }
