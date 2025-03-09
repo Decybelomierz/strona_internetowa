@@ -409,32 +409,41 @@ main {
 	padding: 80px 0 80px 0;
 }
 
-#footer__logo {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-	text-decoration: none;
-}
-
-/* Social Icons */
 .social__media {
 	width: 100%;
 }
 
 .social__media-wrap {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	width: 90%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 10px auto 10px auto;
+}
+
+.footer__logo {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.project__leader-logo {
+	height: 80px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.website__rights {
+	text-align: center;
+	color: var(--black);
 }
 
 .social__icons {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	width: 200px;
+	margin-left: 40px;
 }
 
 .social__icon-link {
@@ -453,9 +462,6 @@ main {
 	margin-bottom: 16px;
 }
 
-.website__rights {
-	color: var(--black);
-}
 
 /* Responsive Homepage Section Fix */
 @media screen and (max-width: 1080px) {
@@ -505,14 +511,31 @@ main {
 	}
 
 	/* Fundraising Section */
+	.fundraising__main-h1{
+		height: 320px;
+		margin-bottom: -20px;
+	}
+
+	.fundraising__content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	
 	.fundraising__text-box {
-		width: 50%;
-		font-size: 24px;
+		width: 70%;
+		font-size: 32px;
 		margin-right: 25px;
-		text-align: left;
+		margin-bottom: 50px;
+		text-align: center;
 	}
 
 	/* Partnership Section */
+	.partner-ship__main-h1 {
+		margin: 0;
+	}
+
 	.partner-ship__shifter {
 		width: 80%;
 	}
@@ -530,7 +553,7 @@ main {
 		padding-top: 32px;
 	}
 
-	#footer__logo {
+	.footer__logo {
 		margin-bottom: 32px;
 	}
 
