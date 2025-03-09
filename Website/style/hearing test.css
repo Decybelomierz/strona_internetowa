@@ -232,17 +232,15 @@ main {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hearing-test__main h1 {
-	font-size: 48px; 
-	margin: 80px 0 20px 0;
-	color: var(--calculator_light-red);
+.title {
+	height: 250px;
 } 
 
 .hearing-test__main p {
 	text-align: center;
-	font-size: 26px;
-	margin-bottom: 200px;
-	width: 50%;
+	font-size: 28px;
+	margin: -60px 0 200px 0;
+	width: 60%;
 }
 
 .rectangle {
@@ -272,17 +270,14 @@ main {
 	width: 140px;
 	height: 150px;
 	background-color: var(--button_lighterred);
-	border: 3px solid var(--text_box_grey);
 	border-radius: 5px;
 }
 
 #age {
-	/* margin: 40px 800px 0 0; */
 	margin: 60px 0 0 0;
 }
 
 #hz {
-	/* margin: -155px 0 0 800px; */
 	margin: 60px 0 0 0;
 }
 
@@ -346,40 +341,114 @@ main {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1080px) {
 	.hearing-test__main {
-		height: 800px;
+		width: 850px;
+		height: 900px;
+		margin-top: 90px;
+		border-radius: 10px;
 	}
-
+	
+	.title {
+		height: 300px;
+		margin-top: -20px;
+	} 
+	
 	.hearing-test__main p {
-		width: 40%;
+		text-align: center;
+		font-size: 34px;
+		margin-bottom: 60px;
+		width: 80%;
 	}
 	
 	.rectangle {
 		display: none;
 	}
-
+	
 	.rectangle__line {
 		display: none;
 	}
-
-	.check-box__container {
-		width: 30%;
+	
+	.check-box__container { 
+		display: flex;
+		width: 60%;
+		justify-content: space-between;
+		margin-bottom: 120px;
 	}
-
+	
+	.check__box {
+		width: 180px;
+		height: 200px;
+		background-color: var(--button_lighterred);
+		border-radius: 5px;
+	}
+	
 	#age {
-		margin-top: -130px;
+		margin: 0;
 	}
-
+	
 	#hz {
-		margin-top: -130px;
+		margin: 0;
 	}
-
+	
+	.check-box__text {
+		font-size: 32px;
+		font-weight: 600;
+		margin-top: 7px;
+		color: var(--white);
+	}
+	
+	.js__text {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 80%;
+		font-weight: 400;
+		color: var(--white);
+	}
+	
+	#js-text-age {
+		margin-top: 28px;
+		font-size: 62px;
+	}
+	
+	#js-text-hz {
+		margin-top: 35px;
+		font-size: 46px;
+	}
+	
 	.button__section {
-		margin-top: -30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 0;
 	}
-
-	.button {
-		margin: 0 25px;
+	
+	.button__main {
+		margin-bottom: 25px;
+	}
+	
+	.button { 
+		font-size: 28px;
+		font-weight: 600;
+		height: 100px;
+		width: 280px;
+		margin: 0 30px;
+		border: none;
+		color: var(--white);
+		background-color: var(--button_lighterred);
+		border-radius: 7px;
+		transition: background-color 0.4 ease;
+		cursor: pointer;
+	}
+	
+	.button:hover {
+		background-color: var(--button_darkerred);
+	}
+	
+	.button:active {
+		background-color: var(--button_lighterred);
 	}
 }

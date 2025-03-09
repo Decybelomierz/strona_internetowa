@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     const sound = {
-        hearing_test: new Audio("sounds/hearing_test.mp3"),
+        hearing_test: new Audio("style/sounds/hearing_test.mp3"),
     };
 
     // Animacja przesuwania się suwaka
