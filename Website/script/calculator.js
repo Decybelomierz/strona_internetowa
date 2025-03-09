@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Konwersja na godziny i minuty
         const hours = Math.floor(safeTime);
         const minutes = Math.round((safeTime - hours) * 60);
-        if (safeTime < 1 / 60 / 60) {
+        if (noiseLevel >= 115) {
             resultDiv.textContent = 'Niebezpieczny poziom hałasu! Wymagana natychmiastowa ochrona słuchu.'
             resultDiv.style.color = "red";
         } else {
