@@ -287,42 +287,42 @@ main {
 
 
 @media screen and (max-width: 1080px) {
-.sound-generator__main {
-	height: 750px;
-	width: 800px;
-	border-radius: 12px;
-}
-
-.title {
-	height: 220px;
-	margin: -20px 0 10px 0;
-}
-
-.sound-generator__main p {
-	font-size: 32px;
-	margin-bottom: 45px;
-}
-
-.sound__controls {
-	gap: 20px;
-}
-
-.sound__option label {
-	font-size: 30px;
-	width: 25%;
-	margin-left: 25px;
-	margin-right: 5px;
-}
-
-.sound__input {
-	width: 60%;
-}
-
-#stop-all {
-	margin-top: 50px;
-	height: 80px;
-	width: 400px;
-	font-size: 32px;
-}
+	.sound-generator__main {
+		height: 750px;
+		width: 800px;
+		border-radius: 12px;
+	}
+	
+	.title {
+		height: 220px;
+		margin: -20px 0 10px 0;
+	}
+	
+	.sound-generator__main p {
+		font-size: 32px;
+		margin-bottom: 45px;
+	}
+	
+	.sound__controls {
+		gap: 20px;
+	}
+	
+	.sound__option label {
+		font-size: 30px;
+		width: 25%;
+		margin-left: 25px;
+		margin-right: 5px;
+	}
+	
+	.sound__input {
+		width: 60%;
+	}
+	
+	#stop-all {
+		margin-top: 50px;
+		height: 80px;
+		width: 400px;
+		font-size: 32px;
+	}
 
 }

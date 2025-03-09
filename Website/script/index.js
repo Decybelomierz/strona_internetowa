@@ -46,20 +46,4 @@ document.addEventListener("DOMContentLoaded", function() {
             img.src = orginalSrc
         });
     });
-
-    // Sekcja tekstu o nas
-    // const toggleButton = document.querySelector('.text__toogle-button');
-    // const textContent = document.querySelector(".content");
-
-    // toggleButton.addEventListener("click", function() {
-    //     textContent.classList.toggle("expanded");
-
-    //     // Zmień tekst na przycisku w zależności od stanu
-    //     if (textContent.classList.contains("expanded")) {
-    //         toggleButton.textContent = "Pokaż mniej"
-    //     } else {
-    //         toggleButton.textContent = "Pokaż więcej"
-    //     }
-    // })
-
 });
