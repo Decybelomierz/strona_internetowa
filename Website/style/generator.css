@@ -221,40 +221,43 @@ main {
 }
 
 .sound-generator__main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 	background: var(--white);
-	padding: 45px;
+	height: 550px;
+	width: 700px;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	max-width: 600px;
-	width: 100%;
 }
 
-.sound-generator__main h1 {
-	color: var(--calculator_light-red);
-	font-size: 44px;
-	margin-bottom: 30px;
+.title {
+	height: 180px;
+	margin: -10px 0 10px 0;
 }
 
 .sound-generator__main p {
-	font-size: 24px;
+	font-size: 26px;
 	margin-bottom: 35px;
+	width: 80%;
 }
 
 .sound__controls {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+	width: 100%;
 }
 
 .sound__option {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .sound__option label {
 	font-size: 20px;
+	width: 20%;
+	margin-left: 25px;
 }
 
 .sound__input {
@@ -262,9 +265,10 @@ main {
 }
 
 #stop-all {
-	margin-top: 35px;
-	padding: 10px 20px;
-	font-size: 18px;
+	margin-top: 30px;
+	height: 60px;
+	width: 300px;
+	font-size: 22px;
 	border: none;
 	background-color: var(--button_lighterred);
 	color: var(--white);
@@ -279,4 +283,46 @@ main {
 
 #stop-all:active {
 	background-color: var(--button_lighterred);
+}
+
+
+@media screen and (max-width: 1080px) {
+.sound-generator__main {
+	height: 750px;
+	width: 800px;
+	border-radius: 12px;
+}
+
+.title {
+	height: 220px;
+	margin: -20px 0 10px 0;
+}
+
+.sound-generator__main p {
+	font-size: 32px;
+	margin-bottom: 45px;
+}
+
+.sound__controls {
+	gap: 20px;
+}
+
+.sound__option label {
+	font-size: 30px;
+	width: 25%;
+	margin-left: 25px;
+	margin-right: 5px;
+}
+
+.sound__input {
+	width: 60%;
+}
+
+#stop-all {
+	margin-top: 50px;
+	height: 80px;
+	width: 400px;
+	font-size: 32px;
+}
+
 }

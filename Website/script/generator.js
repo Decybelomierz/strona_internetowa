@@ -39,9 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Ładowanie dźwięków
     const sounds = {
-        forest: new Audio("sounds/forest.mp3"),
-        rain: new Audio("sounds/rain.mp3"),
-        fire: new Audio("sounds/fire.mp3")
+        forest: new Audio("style/sounds/forest.mp3"),
+        rain: new Audio("style/sounds/rain.mp3"),
+        fire: new Audio("style/sounds/fire.mp3"),
+        storm: new Audio("style/sounds/")
     };
 
     // Funkcja zapętlania dźwięków
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const forestSlider = document.getElementById("forest-sound");
     const rainSlider = document.getElementById("rain-sound");
     const fireSlider = document.getElementById("fire-sound");
+    const stormSlider = document.getElementById("storm-sound");
     const stopAllButton = document.getElementById("stop-all");
 
     // Obsługa suwaków głośności
@@ -75,6 +77,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     fireSlider.addEventListener("input", function() {
+        sounds.fire.volume = parseFloat(this.value);
+        if (this.value > 0) {
+            sounds.fire.play();
+        } else {
+            sounds.fire.pause();
+        }        
+    });
+
+    stormSlider.addEventListener("input", function() {
         sounds.fire.volume = parseFloat(this.value);
         if (this.value > 0) {
             sounds.fire.play();
