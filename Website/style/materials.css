@@ -242,11 +242,12 @@ main {
 }
 
 .title {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-	font-size: 44px;
-	color: var(--calculator_light-red);
+	height: 300px;
+	margin: -85px 0 -125px 0;
+}
+
+#color {
+	margin: -85px 0 -115px 0;
 }
 
 #block-left {
@@ -255,6 +256,7 @@ main {
 
 #block-right {
 	margin-left: 60px;
+	margin-bottom: 50px;
 }
 
 .description {
@@ -307,7 +309,7 @@ main {
 }
 
 #btn-color {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 

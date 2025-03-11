@@ -333,6 +333,10 @@ main {
 	text-align: left;
 }
 
+.img__description-team-members {
+	text-align: left;
+}
+
 /* Fundrising Section */
 .fundraising__container {
 	display: flex;
