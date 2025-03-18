@@ -225,7 +225,9 @@ main {
 }
 
 .description {
+    text-align: center;
     font-size: 26px;
+    width: 70%;
 }
 
 .gallery__main {
@@ -238,4 +240,15 @@ main {
 .art {
     height: 700px;
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 1080px) {
+    .title { 
+        font-size: 70px;
+    }
+
+    .gallery__main {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
