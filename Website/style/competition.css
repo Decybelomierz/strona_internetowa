@@ -275,6 +275,7 @@ main {
 
 #date {
     color: var(--button_darkerred);
+	text-decoration: underline;
 }
 
 .main__img {
